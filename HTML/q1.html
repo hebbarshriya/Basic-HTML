@@ -1,0 +1,19 @@
+<html>
+<head>
+<title>Lab8_1</title>
+</head>
+<body>
+<canvas id="myCanvas" width="200" height="300" style="">
+<script type="text/javascript"> var r1 =
+document.getElementById("myCanvas");
+var rect1 = r1.getContext("2d");
+rect1.fillStyle = "green";
+rect1.fillRect(20, 20, 125, 200);
+var r2 = document.getElementById("myCanvas");
+var rect2 = r2.getContext("2d");
+rect2.fillStyle = "orange";
+rect1.rotate(40 * Math.PI / 180);
+rect2.fillRect(100, -20, 125, 200);
+</script>
+</body>
+</html>

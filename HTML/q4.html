@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>Lab8_4</title>
+</head>
+<body>
+<script type="text/javascript">
+function check()
+{var input = document.getElementById("inp").value;
+var output = document.getElementById("out")
+if (input.match(/(true)|(false)/g))
+output.setAttribute("value" ,"boolean");
+else if (input.match(/[A-z]/g))
+output.setAttribute("value" ,"string");
+else
+output.setAttribute("value" , "integer");
+}
+</script>
+<input type="text" name="in" id="inp" placeholder="Enter value to know its data
+type"> <br>
+<input type="text" name="out" id="out">
+<br>
+<button onclick="check()">
+Check
+</button>
+</body>
+</html>
